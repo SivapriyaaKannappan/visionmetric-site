@@ -102,11 +102,11 @@ params:
   privacy_policy: https://policies.google.com/privacy
 
   menu:
-  main:
+  footer:
     - name: Terms & Conditions
       url: /terms/
       weight: 100
-      
+
   # First one is picked as the Twitter card image if not set on page.
   # images: [images/project-illustration.png]
 
