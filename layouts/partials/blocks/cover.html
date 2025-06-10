@@ -1,0 +1,43 @@
+<!-- 
+{{/* Get background image from .Params.images or fall back to default */}}
+{{ $bg := "images/featured_background.jpg" }}
+{{ with .Params.images }}
+  {{ $bg = index . 0 }}
+{{ end }}
+
+<section class="cover-image" style="background-image: url('/{{ $bg }}'); background-size: 110% auto; background-position: center center; padding: 200px 0; position: relative; color: white;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+  
+  <div class="container text-center" style="position: relative; z-index: 2;">
+    <h1>{{ .Get "title" }}</h1>
+    {{ .Inner }}
+  </div>
+</section> -->
+
+
+<!-- <section class="cover-image" style="
+  background-image: url('/{{ $bg }}');
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 200px 0;
+  position: relative;
+  color: white;
+">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+  
+  <div class="container text-center" style="position: relative; z-index: 2; max-width: 100%; padding-left: 0; padding-right: 0;">
+    <h1>{{ .Get "title" }}</h1>
+    {{ .Inner }}
+  </div>
+</section> -->
+
+<section class="cover-image">
+  <div class="overlay"></div>
+  <div class="content container text-center">
+    <h1>{{ .Get "title" }}</h1>
+    {{ .Inner }}
+  </div>
+</section>

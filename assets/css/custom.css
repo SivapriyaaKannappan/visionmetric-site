@@ -1,0 +1,195 @@
+/* === Layout Overrides === */
+/* .page-wrapper {
+  background-color: red !important;
+}
+
+/* === Typography === */
+/*h1 {
+  color: red !important;
+} */
+
+.cover-image .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cover-image {
+  position: relative;
+  width: 100vw;               /* full viewport width */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;         /* pull section full width */
+  margin-right: -50vw;
+  
+  background-image: url('/images/VM_banner.jpg'); /* or dynamically inject */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 200px 0;
+  color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.cover-image .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.cover-image .content {
+  position: relative;
+  z-index: 2;
+  max-width: 100px; /* Or whatever max width you want */
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cover-custom {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('/images/VM_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cover-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  padding-bottom: 80px;
+}
+
+.cover-arrow {
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+
+.move-down {
+  position: absolute;
+  bottom: -370px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+/* ==================================================================
+/* assets/css/custom.css */
+
+.block.section.row {
+  max-width: 400px;   /* shrink total row width */
+  margin: 0 auto;     /* center it */
+}
+/* Make feature blocks background transparent and center-align text */
+.feature {
+  background-color: transparent;
+  text-align: center;
+  /* padding: 1.5rem; */
+  padding: 0.5rem 0.75rem; /* less padding = thinner row */
+  margin: 0 10px;  /* space between feature blocks */
+}
+
+/* Optional: Equal width per column */
+.feature.col-md-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+/* Optional: Customize title font */
+.feature h2 {
+  font-size: 1.5rem;
+  color: #004080;
+  font-weight: bold;
+}
+/*======*/
+.narrow-section {
+  max-width: 900px;  /* or whatever width you want */
+  margin: 0 auto;    /* center the section */
+  padding: 1rem 0;
+}
+
+.narrow-section .feature {
+  padding: 1rem;
+  text-align: center;
+}
+/* ==================================================================*/
+.bg-dark-purple {
+  background-color: #4B0082 !important; /* dark purple */
+  color: white !important;
+  padding: 2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.bg-dark-orange {
+  background-color: #D35400 !important; /* dark orange */
+  color: white !important;
+  padding: 2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* Center text only for paragraphs and headings, NOT for lists */
+.bg-dark-purple > p,
+.bg-dark-purple > h2,
+.bg-dark-orange > p,
+.bg-dark-orange > h2 {
+  text-align: center;
+}
+
+/* Left-align bullet lists inside these blocks */
+.bg-dark-purple ul,
+.bg-dark-orange ul {
+  text-align: left;
+  padding-left: 1.2rem;  /* add some left padding */
+  margin-left: 0;
+}
+
+/* ==================================================================*/
+/* Increase font size for feature blocks */
+.feature {
+  font-size: 2.25rem !important;       /* Adjust to desired size */
+  text-align: center;       /* Center text inside feature */
+  padding: 2rem;            /* Add some padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Make sure lists are left-aligned but contained inside centered block */
+.feature ul {
+  text-align: left;
+  margin: 1rem auto 0;
+  padding-left: 1.5rem;
+  max-width: 90%;
+}
+
+/* Set equal width for each feature column */
+.feature.col-md-6 {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+}
+
+/* ==================================================================*/
+
+.blocks-lead .container {
+  background: transparent !important;
+  border: none !important;
+}
+/* ==================================================================*/
+/* Terms & Conditions */
+.terms-page {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+/* ==================================================================*/

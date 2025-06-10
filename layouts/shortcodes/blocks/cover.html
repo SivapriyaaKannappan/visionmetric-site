@@ -1,0 +1,14 @@
+{{ $bg := "images/featured_background.jpg" }}
+{{ with .Page.Params.images }}
+  {{ $bg = index . 0 }}
+{{ end }}
+
+<section class="cover-image d-flex align-items-center justify-content-center" style="background-image: url('/{{ $bg }}'); background-size: cover; background-position: center; color: white; height: 100vh; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+  
+  <div class="container text-center" style="position: relative; z-index: 2;">
+    <h1>{{ .Get "title" }}</h1>
+    {{ .Inner }}  {{/* 👈 This line is critical */}}
+  </div>
+</section>
+

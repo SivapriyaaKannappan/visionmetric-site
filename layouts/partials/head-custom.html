@@ -1,0 +1,6 @@
+{{ with resources.Get "css/custom.css" }}
+  {{ $customStyles := . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $customStyles.Permalink }}" integrity="{{ $customStyles.Data.Integrity }}">
+{{ else }}
+  <!-- CUSTOM.CSS NOT FOUND -->
+{{ end }}
