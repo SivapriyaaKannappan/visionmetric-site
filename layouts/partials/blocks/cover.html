@@ -1,10 +1,10 @@
-<!-- 
+
 {{/* Get background image from .Params.images or fall back to default */}}
 {{ $bg := "images/featured_background.jpg" }}
 {{ with .Params.images }}
   {{ $bg = index . 0 }}
 {{ end }}
-
+<!--
 <section class="cover-image" style="background-image: url('/{{ $bg }}'); background-size: 110% auto; background-position: center center; padding: 200px 0; position: relative; color: white;">
   <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
   
