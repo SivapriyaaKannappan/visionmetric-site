@@ -6,12 +6,13 @@
 #publish = "public"
 
 [build]
-command = "hugo"
+command = "hugo --gc --minify"
 publish = "public"
 
 
 [build.environment]
-GO_VERSION = "1.22.2"
+#GO_VERSION = "1.22.2"
+HUGO_VERSION = "0.147.6"   # Use your required Hugo version
 
-[context.production]
-command = "npm run build:production"
+#[context.production]
+#command = "npm run build:production"
