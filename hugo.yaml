@@ -1,4 +1,8 @@
-baseURL: https://example.docsy.dev
+#baseURL: https://example.docsy.dev
+baseURL: "/"
+relativeURLs: true
+canonifyURLs: true
+
 title: VISIONMETRIC
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu

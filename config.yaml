@@ -9,7 +9,18 @@
 # DO NOT add any config parameters to this file. You can safely delete this file
 # if your project is using the required Hugo version.
 
+baseURL: "http://localhost/vmhugo/"
+relativeURLs: true
+canonifyURLs: true
+
 module:
   hugoVersion:
     extended: true
     min: 0.110.0
+
+params:
+  # Ensure it doesn't use example.docsy.dev
+  github_repo: ""
+  github_branch: ""
+  images:
+    favicon: "images/favicon.ico"
