@@ -1,4 +1,4 @@
-{{ with resources.Get "css/custom.css" }}
+{{ with resources.Get "/vmhugo/css/custom.css" }}
   {{ $customStyles := . | minify | fingerprint }}
   <!-- Custom Tailwind CSS -->
   <link rel="stylesheet" href="/css/tailwind.css">

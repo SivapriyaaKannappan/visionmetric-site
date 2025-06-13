@@ -4,7 +4,7 @@ images:
   - "images/VM_banner.jpg"
 ---
 {{< blocks/cover title=" " image_anchor="top" height="full" >}}
-<section class="cover-section d-flex flex-column" style="min-height: 97vh; background-image: url('/images/VM_banner.jpg'); background-size: cover; background-position: center;">
+<section class="cover-section d-flex flex-column" style="min-height: 97vh; background-image: url('/vmhugo/images/VM_banner.jpg'); background-size: cover; background-position: center;">
   <div class="flex-grow-1 d-flex flex-column justify-content-end align-items-center" style="padding-bottom: 0px;" >
     <!-- Button Row -->
     <div class="d-flex justify-content-center" style="margin-top: 100px;">
