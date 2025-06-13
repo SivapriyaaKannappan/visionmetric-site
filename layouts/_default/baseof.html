@@ -8,6 +8,9 @@
     {{ $customStyles := resources.Get "css/custom.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $customStyles.Permalink }}" integrity="{{ $customStyles.Data.Integrity }}">
 
+    {{ $css := resources.Get "css/custom.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
   </head>
   <body class="td-{{ .Kind }}{{ with .Page.Params.body_class }} {{ . }}{{ end }}">
     <header>
